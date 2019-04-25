@@ -1,20 +1,18 @@
-### MK test master will perform the MK calculation on every lin ein the file regardless of frequency values in the population
-### Best part of this program is that it is a function as opposed to lines of code, allowing for an input statement and an
-### MK calculation based off of the specified file
+### MK master uses polymorphism data for specified gene loci to calculate adaptation rates on the entire dataset 
 
 import math
 import csv
 
-### function will run with the file name as an input parameter, specified in main function
+### function established polymorphism count, accepts data file as input 
 def mk_testing(filename):
     with open(filename, "r") as csv_file:
         D_s = 0
         D_n = 0
         P_n = 0
         P_s = 0
-        csv_reader = csv.reader(csv_file, delimiter='\t') # separates the line by tabs
+        csv_reader = csv.reader(csv_file, delimiter='\t') 
         for line in csv_reader:
-            P_n += int(str(line[1]))
+            P_n += int(str(line[1])) 
             D_s += int(str(line[6]))
             D_n += int(str(line[5]))
             P_s += int(str(line[3]))
