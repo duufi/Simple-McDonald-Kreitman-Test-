@@ -1,4 +1,4 @@
-This repository provides scripts that allows users to perform McDonald-Kreitman test calculations on SNP dataset.  
+This repository provides scripts that allow users to perform McDonald-Kreitman test calculations on SNP dataset.  
 
 mk_test_master contains an algorithm for calculating rates of adaptation (alpha) for all alleles present in a population (or alleles present in input dataset)
 
